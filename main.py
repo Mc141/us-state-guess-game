@@ -53,7 +53,7 @@ while game_is_running:
 
 
 
-unknown__states = list(set(state_names).difference(set(correct_guesses)))
+unknown__states = [state for state in state_names if state not in correct_guesses]
 
 
 
